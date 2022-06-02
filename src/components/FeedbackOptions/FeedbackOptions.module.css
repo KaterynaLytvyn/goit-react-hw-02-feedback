@@ -1,0 +1,17 @@
+.list {
+    display: flex;
+
+}
+
+.list__item {
+    margin-right: 15px;
+}
+
+button {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 5px;
+    cursor: pointer;
+    min-width: 60px;
+}
