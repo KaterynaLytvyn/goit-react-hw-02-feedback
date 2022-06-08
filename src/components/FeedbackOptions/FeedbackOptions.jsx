@@ -5,8 +5,6 @@ const FeedbackOptions = (props) => {
     const {options, onLeaveFeedback} = props;
 
         return (
-            <div>
-              <h1>Please leave feedback</h1>
               <ul className={s.list}>
                 {options.map(option => 
                     <li className={s.list__item} key={option}>
@@ -14,8 +12,12 @@ const FeedbackOptions = (props) => {
                     </li>
                 )}
               </ul>      
-            </div>
           )
 }
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.array.isRequired,
+  onLeaveFeedback: PropTypes.func.isRequired,
+};
 
 export default FeedbackOptions;
